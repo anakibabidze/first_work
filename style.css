@@ -39,7 +39,7 @@ h1 {
 }
 
 .first-section {
-    background-image: url(backround.png);
+    background-image: url(assets/backround.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
