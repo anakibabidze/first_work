@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #957554;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: black;
+}
+.navigation {
+    display: flex;
+    gap: 50px;
+}
+
+.first-section {
+    background-image: url(backround.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.first-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 53px;
+}
+
+.main-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 92px;
+    color: #FFFFFF;
+}
+.description,
+.button,
+.footer-nav-links,
+.footer-text a,
+.footer-text p {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.button {
+text-decoration: none;
+background-color: #dfaa5b;
+padding: 25px 135px;
+border-radius: 10px;
+}
+
+.secondary-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    text-align: center;
+    margin-bottom: 47px;
+}
+/* აქ 590 უნდა გადავაკეთო 630 პიქსელად რეზოლუციის გამო დავაპატარავე */
+ .rooms-card {
+    width: 590px; 
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+ }
+ .rooms-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .cards-content {
+    position: absolute;
+    left: 0%;
+    bottom: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    width: 100%;
+ }
+
+ .card-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.button.button-small {
+    padding: 24px 52px 24px 56px;
+}
+
+.overley {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.48%, #000000 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rooms-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+}
+.second-section {
+    margin-bottom: 55px;
+}
+.third-section {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-bottom: 122px;
+}
+
+.footer-content {
+   max-width:1440px;
+    height: 459px;
+    background: rgba(17, 17, 17, 1);
+}
+
+footer {
+    background: #111111;
+    padding: 51px 0 159px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content > img {
+    width: 154px;
+    height: 126px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+}
+.footer-nav-links {
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer-nav-links:hover,
+.footer-text a:hover {
+    color: #dfaa5b;
+}
+.footer-text a {
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.news-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    grid-template-rows: 500px;
+    margin-bottom: 50px;
+}
+/* ამ იმიჯის პარამეტრების გაწერის გარეშეც იგივეს შვება ჩემთან თუმცა ლექციაში იყო და ვტოვებ მეც*/
+
+.news-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 44px;
+    
+}
+/* აქაც h3 და p კონტენტებს შეგვიძ₾ია მხოლოდ ფერი გავუწეროთ*/
+.news-card-content h3{
+    font-family: Ubuntu;
+font-size: 40px;
+font-weight: 500;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(149, 117, 84, 1);
+;
+}
+
+
+.news-card-content p {
+    font-family: Ubuntu;
+font-size: 40px;
+font-weight: 500;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+}
+.news-card:nth-child(2n)  img {
+    order: 1;
+}
+
+.news-card:nth-child(2n) .news-card-content{
+    align-items: end;
+}
+
+.news-card:nth-child(2n) .news-card-content p {
+    text-align: right;
+}.news-card:last-child {
+    margin-bottom: 107px;
+} 
+.gallery-grid { 
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(2, 500px);
+   gap: 30px;
+   margin-bottom: 104px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-grid img:first-child {
+    grid-area: 1/1/2/4;
+}
+.gallery-grid img:nth-child(2) {
+    grid-area: 1/4/2/6;
+}
+.gallery-grid img:nth-child(3) {
+    grid-area: 2/1/3/3;
+}
+.gallery-grid img:nth-child(4) {
+    grid-area: 2/3/3/6;
+}
+
+.gallery-grid img:hover {
+transform:scale(1.09);
+}
